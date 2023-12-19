@@ -1,0 +1,265 @@
+#main-doc {
+    text-align:center;
+    margin:0 auto
+    
+  }
+  
+  a {
+    display:block;
+    text-decoration:none;
+    
+  }
+  
+  * {
+    box-sizing:border-box;
+  }
+  
+  
+  #navbar {
+      position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: grey;
+   
+    
+    }
+  
+  
+    .card {
+      width:200px;
+      border :5px solid black;
+      margin:0 auto
+    }
+  
+    .btn-group button {
+    background-color:black;
+    border:2px solid green;
+    color:white;
+    padding: 15px 24px ;
+    float :left;
+    cursor:pointer;
+  }
+  
+  #con,.nav-link {
+    font-size:30px;
+    padding:5px
+  }
+  #main-doc header {
+    font-size:26px
+  }
+  @media only screen and(max-width:400px) {
+    #main-doc {
+      margin-left:-10px
+    }
+   
+  }
+  
+  @media only screen and (max-width:850px) {
+    #navbar {
+      position:absolute;
+      top:0;
+      padding:0;
+      border:none;
+      border-bottom:2px solid;
+      width:100%;
+      height:320px;
+  
+    }
+  
+  
+    #main-doc {
+      position:relative;
+      top:320px;
+      
+    }
+  }
+  
+  
+  li,p {
+    font-size:17px;
+    font-family:Verdana;
+    color:purple
+    
+  }
+  
+  header {
+    font-family:cursive;
+    font-weight:600;
+    color:red
+  }
+  
+  #navbar a {
+    font-family:impact;
+    color:blue
+  }
+  
+  
+  body {
+    background-color:lightgreen
+  }
+  
+  #js {
+    background-color:grey;
+    padding:10px
+  }
+  
+  #js2 {
+    background-color:grey;
+    padding:5px;
+    
+   
+  }
+  
+  
+  .container {
+  
+    padding-bottom:70px;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    
+    
+    
+    
+    
+  }
+  
+  
+  .container section {
+    width:500px;
+  
+    }
+  
+  .container section details summary {
+    padding:15px;
+    background-color:yellow;
+    border:2px solid black;
+    position:relative;
+    list-style:none;
+    font-size:20px;
+    font-family:fantasy;
+  
+  }
+  
+  .container section details p {
+    padding:5px;
+   font-size:18px;
+    
+    color:black;
+    border:2px solid yellow
+  }
+  
+  li {
+    padding:5px;
+    font-family:cursive;
+    color:purple;
+    font-size:20px
+  }
+  
+  .container section details {
+   
+    border:4px solid black;
+    
+  }
+  
+  
+  
+  .carousel-wrapper {
+      height:400px;
+      position:relative;
+      width: 490px;
+      display: block;
+      margin: 0 auto;
+      border: 2px solid black;
+  
+  }
+  
+  .carousel-item {
+      position:absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 25px 50px;
+      opacity: 0;
+      transition: all 0.5s ease-in-out
+  }
+  
+  .arrow {
+      border:solid darkblue;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 12px;
+  }
+  
+  .arrow-prev {
+      left:30px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(135deg);
+  }
+  
+  .arrow-next {
+      right:30px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  [id^= "item"] {
+      display: none;
+  
+  }
+  
+  
+  .item-1 {
+      z-index: 2;
+      opacity: 1;
+     
+       background: url('https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png');
+      background-size: cover;
+  }
+  
+  .item-2 {
+     
+     background: url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg');
+      background-size: cover;
+       
+  }
+  
+  .item-3 {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/7/79/2022_-_FullSTK_SAM_1969_%2852475207085%29.jpg');
+      background-size: cover;
+      
+  }
+  
+  *:target ~ .item-1 {
+      opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  
+  .badge {
+    font-family:impact;
+    letter-spacing:4px;
+    color:red;
+    background-color:black;
+    
+  }
+  
+  .img {
+    position:absolute;
+    z-index:-1;
+    left:20px;
+  
+  }
