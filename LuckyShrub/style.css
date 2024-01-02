@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,800,900,700&display=swap');
+
+body {
+    /* background-color: rgb(196, 249, 196) !important; */
+    background-color: #b1fab4 !important; ;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box
+}
+
+
+
+.company-logo {
+    display: block;
+    margin:auto;
+   max-width:300px;
+   width:290px;
+   height: 400px;
+  
+  padding: 5px;
+  animation: cycle 1.2s ease-in;
+animation-timing-function: linear;
+animation-fill-mode: forwards ;
+  
+
+}
+
+.arw:hover {
+    background-color: black !important;
+    transition: 1s;
+}
+
+.company-logo:hover {
+   transition: 1s ease-in-out;
+    height: 430px;
+    cursor: progress;
+}
+
+@keyframes cycle {
+  0% {
+      transform:rotate(0deg);
+      position: relative;
+     top:-200px
+     
+  }
+
+
+  100% {
+
+      transform:rotate(360deg);
+     width: 390px; 
+     transition: 1.5s;
+    top:200px;
+    width: 310px;
+    
+    }
+}
+
+
+
+  
+li .nav-menu-a {
+    font-family: Poppins,sans-serif;
+    font-weight: 500;
+    color:rgb(128, 233, 128) !important;
+    font-size: 20px;
+    display: inline-block;
+    margin:0 5px
+
+    
+}
+
+
+
+.ul-background {
+    background-color:rgb(19,109,21) ;
+    border-radius: 10px;
+    padding:0px 20px 0px 20px;
+  
+    margin: 0 auto;
+
+}
+
+
+
+li  {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.nav-menu-a:hover {
+    color:rgb(0, 213, 0) !important;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+  .small-logo-img {
+    width: 100px;
+    height: 130px;
+    margin-left: 40px;
+  }
+
+
+  .small-logo-img, .copyright {
+   position: relative;
+   top:300px
+  }
+
+
+.sale {
+    font-family: 'Permanent Marker', cursive;
+    color:#66d046;
+    text-align: center;
+    
+}
+
+.Lucky-Shrubsale p {
+    font-family: 'Carattere';
+    font-weight: 700;
+    font-size: 30px;
+    color:rgb(219, 41, 41);
+    text-align: center;
+}
+
+.Lucky-Shrubsale {
+    background-image: url('Lucky-Shrub-Logos/boxer.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width:1000px;
+    margin: 0 auto;
+    height: 380px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+.sale span:first-of-type {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-family: 'Gloria Hallelujah';
+}
+
+.copyright-text{font-family:'Times New Roman', Times, serif;font-weight: 500;font-size: 25px;
+}
+
+
+
+.shop-btn {
+    width:160px;
+    height: 50px;
+    display: block;
+    margin: auto auto;
+    font-family: 'Rubik Doodle Shadow';
+    font-size: 24px;
+    background-color: #27431e;
+    color:lightgreen;
+    margin-top: 40px;
+    border-radius: 10px;
+  
+}
+
+
+
+
+.shop-btn:hover {
+   font-size: 27px;
+   width: 180px;
+   height: 60px;
+   transition: 500ms ease-in;
+
+  
+}
+
+.deadline {
+    color:white
+}
+
+
+.card {
+    text-align: center !important;
+    margin: 25px;
+    
+    width:270px !important;
+    
+    height: 400px !important;
+      
+    }
+    
+    #store {
+        color: #2d4c21 !important;
+        background-image: url('Lucky-Shrub-Logos/plants.jpeg');
+        height: 180px;
+        font-size: 38px;
+    }
+    
+    
+    
+    
+    .open-days {
+        background-image: url('Lucky-Shrub-Logos/plant.jpeg') ;
+        width: 270px ;
+        height: 200px ;
+        color:#2476ac ;
+        font-size: 35px;
+    }
+    
+    .open-days> p {
+        font-family: Pangolin;
+    }
+    
+    li {
+        font-family: 'Pangolin';
+    }
+    #shrub {
+    display: flex;
+    flex-direction: row;
+       margin-top: 120px;
+       align-items: center;
+       justify-content: center;
+    
+    
+    }
+
+h3:last-of-type{
+    color:purple;
+    font-size: 35px;
+
+
+}
+
+h3 {
+    font-family: Poppins,sans-serif;
+}
+
+
+.service {
+    background-image: url('Lucky-Shrub-Logos/serve.jpeg');
+    height: 150px;
+}
+
+@media only screen and (max-width:800px) {
+    .Lucky-Shrubsale {
+        max-width: 390px;
+    }
+
+    .Lucky-Shrubsale p {
+        margin-left:-10px
+    }
+
+    
+}
+
+
+
+
+@media only screen and (max-width:701px) {
+  #shrub {
+    display: block;
+    margin-top: 90px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width:932px) {
+ .open-days {
+    max-width: 2690px;
+ }
+  }
+
+  @media only screen and (max-width:100px) {
+    .card {
+        max-width: 150px;
+    }
+
+
+    .open-days {
+        max-width:150px;
+        height: 400px !important;
+    }
+     }
+
+     @media only screen and (max-width:700px) and (min-width:414px) {
+        .card {
+            margin: 0 auto;
+            margin-top: 190px !important;
+        }
+     }
+
+
+     @media only screen and (max-width:946px) and (min-width:702px) {
+        .card > .open-days {
+            max-width: fit-content;
+        }
+     }
+
+
+
+     .Plants {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+
+     .img1,.img2,.img3 {
+        width: 600px;
+        height: 290px;
+     }
+
+
+     .carousel {
+        width:600px !important;
+
+     }
+
+     
+     .learn-more {
+        text-decoration: none;
+        color:blue
+     }
+
+     .learn-more:hover {
+        color:white;
+        transition: 0.5s ease-in;
+     }
+
+     .learn {
+        font-family: Gloria Hallelujah;
+        text-align: center;
+        font-size: 20px;
+     }
+
+     @media only screen and (max-width:534px){
+      .carousel {
+        max-width: 400px !important;
+        margin: 0 auto !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-left:80px !important
+      }
+
+      .img1,.img2,.img3 {
+        max-width: 400px;
+      }
+     }
